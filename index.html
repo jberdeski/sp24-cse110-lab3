@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meeting Minutes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+  </head>
+  <body>
+    <header>
+        <h1>CSE 110 Development Meeting</h1>
+        <h2>Documentation</h2>
+        <time>2024-04-10</time>
+    </header>
+    
+    <hr>
+
+    <main>
+        <p>
+            Here is where the main points of the April 10th, 2024 meeting.
+            The lead speaker for this meeting was <strong>Julia Berdeski</strong>.
+            <br>
+            <video controls width="420">
+                <source src="media/IMG_9396.mp4" type="video/mp4" />
+                <source src="media/IMG_9396.webm" type="video/webm" />
+            </video>
+            <br>
+            You may reach Julia for questions about <i>this</i> meeting at:
+        </p>
+        <ul>
+            <li><a href="jberdeski@ucsd.edu">Email</a></li>
+        </ul>
+    </main>
+
+    <h3>Navigation Through the Document</h3>
+    <nav class="menu">
+        <ul>
+          <li><a href="#attendence">Attendence</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#notes">Notes</a></li>
+        </ul>
+      </nav>
+
+    <div class="Attendence List">
+        <h4 id="attendence">Attendence List:</h4>
+
+        <ul>
+            <li>Julia B.</li>
+            <li>Cristian R.</li>
+            <li>Cindy L.</li>
+            <li>Sujen K.</li>
+            <li>Prof Powell</li>
+            <li>Brenton D.</li>
+            <li>Jash M.</li>
+        </ul>
+    </div>
+    <div class="Agenda">
+        <h3 id="agenda">Meeting Topics:</h3>
+
+        <ol>
+            <li>Introductions</li>
+            <li>Agenda</li>
+            <li>Last Meeting Topics</li>
+            <li>Project Prompt</li>
+            <li>Brainstorm Ideas</li>
+        </ol>
+    </div>
+    <button class="ad" type="button">!!! F<sub>r</sub>Ee Co<sub>DE</sub> NO<sub>T</sub> a vi<sub>r</sub>uS !!!</button>
+    <section>
+        <h2 id="notes">Notes</h2>
+        <div class="Previous Meeting">
+            <h3>Last Meeting Recap</h3>
+                <details>
+                    <summary>
+                        There is no need to recap.
+                    </summary>
+                    As this is our first meeting there was no previous meeting to discuss. <br>
+                    <em>However</em>, later meetings will have a breif recap of the previous meeting. 
+                </details>
+        </div>
+
+        <div>
+            <h3>Project Prompt</h3>
+            <label for="prompt">Not much has been given about our project currently but this is what we know:</label>
+            <textarea id="prompt" name="prompt" rows="5" cols="45" readonly>
+We will be creating a website that represents our whole team and a program that we would actually use in our lives currently and in the near future. 
+            </textarea>
+
+        </div>
+        
+        <div>
+            <h3>Brainstorm Ideas</h3>
+            <p> Since we don't know much about the prompt we discussed <span class="topics"> team names and logos</span>.</p>
+            <label for="team-name">Choose a name:</label>
+
+            <select name="names" id="team-name">
+              <option value="">--Please choose an option--</option>
+              <option value="script-wizards">Script Wizards</option>
+              <option value="triton-tech-titans">Triton Tech Titans</option>
+              <option value="pixel-pioneers">Pixel Pioneers</option>
+              <option value="coastal-coders">Coastal Coders</option>
+              <option value="404-name-not-found">404 Name Not Found</option>
+              <option value="ctrl-alt-defeat">Ctrl+Alt+Defeat</option>
+            </select>
+
+            <p>
+                Based on the name with the most votes we will design a logo. 
+                <br>
+                But here are a few possible ideas:  
+            </p>
+            <img
+                id="logo-404" width="180" height="180"
+                src="screenshots/Firefly-glitched-404-logo.jpg"
+                alt = "AI generated logo related to the name 404 Name Not Found" />
+            
+            <img 
+                id="logo-wizards" width="180" height="180"
+                src="screenshots/Firefly-logo-with-computers-and-wizard-hats.jpg"
+                alt="AI generated logo related to the name Script Wizards" />
+
+            <img
+                id="logo-coastal" width="180" height="180"
+                src="screenshots/Firefly-Simple-logo-with-a-code-and-ocean-91966.jpg"
+                alt="AI generated logo related to the name Coastal Coders" />
+            <br>
+            <fieldset>
+                <legend>Do you like these logo ideas?</legend>
+              
+                <div>
+                  <input type="radio" id="yes" name="answer" value="yes" checked />
+                  <label for="yes">Yes</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="no" name="answer" value="no" />
+                  <label for="no">No</label>
+                </div>
+              </fieldset>
+            <p>
+                With all that covered, how are <b> you </b> feeling on a scale from 1 - 10?
+            </p>
+
+            <label>Rate How You Feel:</label>
+            <input type="range" list="tickmarks" min="0" max="10" id="tick" name="tick" />
+            <datalist id="tickmarks">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+            </datalist>
+
+        </div>
+
+    </section>
+
+
+    <h4>Confirm your attendence for the next meeting!</h4>
+    <form method="get" class="next-meeting">
+        <div class="next-meeting">
+          <label for="name">Enter your First and Last name: </label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="next-meeting">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="next-meeting">
+          <input type="submit" value="Confirm" />
+        </div>
+    </form>
+    <br>
+    <br>
+    <p>You've made it to the end!</p>
+    <figure>
+        <audio controls src="/media/139-item-catch.mp3"></audio>
+    </figure>
+    <form action="#">
+        <fieldset>
+          <legend>Have you read <em>everything</em>?</legend>
+          <input type="checkbox" id="chbx" name="agree" value="Yes!" />
+          <label for="chbx">I have</label>
+          <br>
+          <label for="read">Read date:</label>
+          <input type="date" id="read" />
+        </fieldset>
+      </form>
+
+    <footer>
+        <p>2024 Berdeski</p>
+    </footer>
+  </body>
+</html>
