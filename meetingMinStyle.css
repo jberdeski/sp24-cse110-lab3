@@ -1,10 +1,10 @@
 /*
 Things I still need:
-1 relative unit, long margin notation, short padding notation,
-border-style, border-color, border-width, text-decoration,
-DISPLAY, height, width, min-width, POSITION, Flexbox, Grid, Responsiveness  
+Responsiveness  
 */
-
+*{
+  text-rendering: auto;
+}
 
 
 :root{
@@ -16,6 +16,18 @@ h2, h4 {
     text-shadow: -2px -2px 0 white, 1px -1px 0 var(--baseLight), -1px 1px 0 var(--baseLight), 1px 1px 0 var(--baseLight); /* Add text shadow */
 }
 
+@media only screen and (max-width: 600px) {
+  /* Add styles specific to small screens here */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Add styles specific to medium screens here */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Add styles specific to large screens here */
+}
+
 body {
     background-image: url(screenshots/landscapeBackground.jpg); /* Replace 'background-image.jpg' with the path to your image */
     background-size: cover; /* This ensures the image covers the entire background */
@@ -24,7 +36,10 @@ body {
     padding: 0; /* To remove default body padding */
     font-size: 16px; /* Using pixel units for font size */
     padding: 2em; /* Using em units for padding */
-    margin: 1cm; /* Using pixel units for margin */
+    margin-top: 20px;
+    margin-right: 1cm;
+    margin-bottom: 20px;
+    margin-left: 1cm;
   }
 
 
@@ -41,6 +56,14 @@ body {
     padding-bottom: 10px;
     padding-left: 20px;
 }
+
+.video-container {
+  position: fixed; /* Set the video container to fixed positioning */
+  top: 20px; /* Example: position the video container 20px from the top of the viewport */
+  right: 20px; /* Example: position the video container 20px from the left of the viewport */
+  z-index: 1; /* Ensure the video container appears above other content */
+}
+
 div > ul {
     font-style: italic; /* Italicize text */
 }
@@ -101,6 +124,10 @@ textarea {
 textarea {
   padding: 10px;
   max-width: 100%;
+  height: 3cm;
+  width: 10cm;
+  min-width: 10cm;
+  min-height: 2cm;
   line-height: 1.5;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -111,6 +138,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 div {
@@ -125,7 +153,44 @@ div h3, div p, div label, div input[type="range"], div select {
       1Q 1Q 0 var(--baseLight); /* Create light colored outline */
   }
 
+#logo-coastal, #logo-wizards, #logo-404 {
+    position: sticky; /* Sticky positioning for the third <img> element */
+    top: 50px; 
+}
 
 input[type="checkbox"] + label {
     font-weight: bold; /* Make label text bold */
+}
+
+#tick {
+  width: 50vw; /* Set the width of the input range to 50% of the viewport's width */
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+}
+
+.flex-container {
+  display: flex; /* Apply flexbox layout */
+  justify-content: space-between; /* Distribute items along the main axis */
+  align-items: center; /* Align items along the cross axis */
+}
+
+.flex-item {
+  background-color: ivory;
+  padding: 10px;
+  margin: 5px;
+}
+
+.grid-container {
+  display: grid; /* Apply grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Define three columns with equal width */
+  grid-gap: 10px; /* Set gap between grid items */
+  display: block;
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  display: none;
 }
