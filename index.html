@@ -7,17 +7,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="meetingMinStyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   </head>
+  <style>
+    h2{
+      color: #0075ca; /* Changes the sub-header color to match the GitHub label*/
+
+    }
+  </style>
   <body>
     <header>
-        <h1>CSE 110 Development Meeting</h1>
+        <h1 style="text-align:center;">CSE 110 Development Meeting</h1> 
         <h2>Documentation</h2>
         <time>2024-04-10</time>
     </header>
     
     <hr>
 
-    <main>
+    <main id="introInfo">
         <p>
             Here is where the main points of the April 10th, 2024 meeting.
             The lead speaker for this meeting was <strong>Julia Berdeski</strong>.
@@ -29,9 +40,7 @@
             <br>
             You may reach Julia for questions about <i>this</i> meeting at:
         </p>
-        <ul>
-            <li><a href="jberdeski@ucsd.edu">Email</a></li>
-        </ul>
+            <a href="jberdeski@ucsd.edu">Email</a></li>
     </main>
 
     <h3>Navigation Through the Document</h3>
@@ -84,6 +93,7 @@
         <div>
             <h3>Project Prompt</h3>
             <label for="prompt">Not much has been given about our project currently but this is what we know:</label>
+            <br>
             <textarea id="prompt" name="prompt" rows="5" cols="45" readonly>
 We will be creating a website that represents our whole team and a program that we would actually use in our lives currently and in the near future. 
             </textarea>

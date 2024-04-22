@@ -1,0 +1,123 @@
+
+:root{
+    --baseLight: #F6EBE9;
+    --baseDark: #945B4A; 
+}
+
+h2, h4 {
+    text-shadow: -2px -2px 0 white, 1px -1px 0 var(--baseLight), -1px 1px 0 var(--baseLight), 1px 1px 0 var(--baseLight); /* Add text shadow */
+}
+
+body {
+    background-image: url(screenshots/landscapeBackground.jpg); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* This centers the image */
+    margin: 0; /* To remove default body margin */
+    padding: 0; /* To remove default body padding */
+    font-size: 16px; /* Using pixel units for font size */
+    padding: 2em; /* Using em units for padding */
+    margin: 1cm; /* Using pixel units for margin */
+  }
+
+
+
+#introInfo{
+    /*This takes the beginning of my Meeting Minutes Page and centers it
+    also making the color of the text a shade of DarkSalmon and Blanched Almond*/
+
+    text-align: center;
+    color: color-mix(blend, DarkSalmon 50%, BlanchedAlmond 50%);
+    margin: 20px; 
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+div > ul {
+    font-style: italic; /* Italicize text */
+}
+div {
+    h3 {
+        font-size: 1.2em; /* Increase font size for nested h3 */
+    }
+}
+
+div:has(button) {
+    border: 2px solid black; /* Add border to divs containing buttons */
+}
+
+.ad{
+    /*
+    This turns my not a virus button green to let people know it is a safe button
+    it also centers the text and changes a bit of the sizing
+    */
+
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000;
+    border-radius: 10px;
+    background-color: hsl(110, 100%, 43%);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .ad:hover {
+    background-color: rgb(0, 255, 8);
+  }
+  
+  .ad:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+      
+}
+
+
+label,
+textarea {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px color(colorspace rgb 153 153 153);
+  font-family: Merriweather, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+div {
+    color: var(--baseDark, #000); /* Set text color to black */
+  }
+  
+div h3, div p, div label, div input[type="range"], div select {
+    text-shadow: 
+      -1Q -1Q 0 var(--baseLight),  
+      1Q -1Q 0 var(--baseLight),
+      -1Q 1Q 0 var(--baseLight),
+      1Q 1Q 0 var(--baseLight); /* Create light colored outline */
+  }
+
+
+input[type="checkbox"] + label {
+    font-weight: bold; /* Make label text bold */
+}
