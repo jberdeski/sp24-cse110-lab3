@@ -49,7 +49,7 @@ body {
     also making the color of the text a shade of DarkSalmon and Blanched Almond*/
 
     text-align: center;
-    color: color-mix(blend, DarkSalmon 50%, BlanchedAlmond 50%);
+    color: color-mix(blend, var(--baseDark) 75%, var(--baseLight) 25%);
     margin: 20px; 
     padding-top: 10px;
     padding-right: 20px;
